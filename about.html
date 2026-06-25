@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us – ShopWave</title>
+  <meta name="description" content="Learn about ShopWave's mission, team, and story behind building India's favourite e-commerce destination." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    h1,h2,h3,h4,.font-display { font-family: 'Syne', sans-serif; }
+    .hero-gradient { background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 50%, #ec4899 100%); }
+    .btn-primary { background: linear-gradient(135deg, #4f46e5, #7c3aed); transition: all 0.3s ease; }
+    .btn-primary:hover { background: linear-gradient(135deg, #4338ca, #6d28d9); transform: translateY(-1px); }
+    .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card-hover:hover { transform: translateY(-4px); box-shadow: 0 16px 32px rgba(79,70,229,0.12); }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- NAVBAR -->
+  <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="../index.html" class="flex items-center gap-2">
+          <div class="w-8 h-8 rounded-lg hero-gradient flex items-center justify-center">
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+          </div>
+          <span class="text-xl font-display font-800 text-gray-900">Shop<span class="text-indigo-600">Wave</span></span>
+        </a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="../index.html" class="nav-link text-gray-600 hover:text-indigo-600 transition-colors text-sm">Home</a>
+          <a href="about.html" class="nav-link text-indigo-600 font-semibold text-sm">About</a>
+          <a href="services.html" class="nav-link text-gray-600 hover:text-indigo-600 transition-colors text-sm">Services</a>
+          <a href="contact.html" class="nav-link text-gray-600 hover:text-indigo-600 transition-colors text-sm">Contact</a>
+        </div>
+        <a href="contact.html" class="hidden md:block btn-primary text-white text-sm px-5 py-2 rounded-full font-medium">Shop Now</a>
+        <button id="menu-btn" class="md:hidden p-2 rounded-lg hover:bg-gray-100">
+          <svg class="w-6 h-6 text-gray-700 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden border-t border-gray-100 bg-white px-4 py-4 space-y-3">
+      <a href="../index.html" class="block text-gray-700 hover:text-indigo-600 py-2">Home</a>
+      <a href="about.html" class="block text-indigo-600 font-semibold py-2">About</a>
+      <a href="services.html" class="block text-gray-700 hover:text-indigo-600 py-2">Services</a>
+      <a href="contact.html" class="block text-gray-700 hover:text-indigo-600 py-2">Contact</a>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="hero-gradient text-white py-20">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <span class="inline-block bg-white/20 text-white text-xs font-semibold px-3 py-1 rounded-full mb-4">Our Story</span>
+      <h1 class="font-display text-5xl font-800 mb-4">About ShopWave</h1>
+      <p class="text-white/80 text-lg max-w-2xl mx-auto">We're on a mission to make premium shopping accessible to everyone — built on trust, quality, and community.</p>
+    </div>
+  </section>
+
+  <!-- BREADCRUMB -->
+  <div class="bg-indigo-50 border-b border-indigo-100 py-3">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav class="text-sm text-gray-500"><a href="../index.html" class="hover:text-indigo-600">Home</a> <span class="mx-2">/</span> <span class="text-gray-800 font-medium">About</span></nav>
+    </div>
+  </div>
+
+  <!-- MISSION -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+    <div class="grid md:grid-cols-2 gap-14 items-center">
+      <div>
+        <span class="text-indigo-600 font-semibold text-sm uppercase tracking-widest">Who We Are</span>
+        <h2 class="font-display text-4xl font-700 text-gray-900 mt-2 mb-6">Born from a Passion for Better Shopping</h2>
+        <p class="text-gray-500 mb-4">ShopWave was founded in 2020 in Hosur, Tamil Nadu, with a simple belief: everyone deserves access to high-quality products at honest prices, without the hassle of traditional retail.</p>
+        <p class="text-gray-500 mb-6">From a small warehouse with 50 products, we've grown to over 10,000 SKUs across categories — all while keeping our promise of authenticity, fast delivery, and genuine customer care at the heart of everything we do.</p>
+        <a href="contact.html" class="btn-primary text-white px-6 py-3 rounded-full font-medium inline-block">Get in Touch</a>
+      </div>
+      <div class="grid grid-cols-2 gap-4">
+        <div class="bg-indigo-50 rounded-2xl p-6 text-center">
+          <p class="font-display text-4xl font-800 text-indigo-600">50K+</p>
+          <p class="text-gray-600 text-sm mt-1">Happy Customers</p>
+        </div>
+        <div class="bg-purple-50 rounded-2xl p-6 text-center">
+          <p class="font-display text-4xl font-800 text-purple-600">10K+</p>
+          <p class="text-gray-600 text-sm mt-1">Products Listed</p>
+        </div>
+        <div class="bg-pink-50 rounded-2xl p-6 text-center">
+          <p class="font-display text-4xl font-800 text-pink-600">99%</p>
+          <p class="text-gray-600 text-sm mt-1">Satisfaction Rate</p>
+        </div>
+        <div class="bg-emerald-50 rounded-2xl p-6 text-center">
+          <p class="font-display text-4xl font-800 text-emerald-600">5★</p>
+          <p class="text-gray-600 text-sm mt-1">Average Rating</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUES -->
+  <section class="bg-gray-50 py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <span class="text-indigo-600 font-semibold text-sm uppercase tracking-widest">What Drives Us</span>
+        <h2 class="font-display text-4xl font-700 text-gray-900 mt-2">Our Core Values</h2>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="card-hover bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
+          <div class="w-12 h-12 bg-indigo-100 rounded-2xl flex items-center justify-center mb-4 text-2xl">🤝</div>
+          <h3 class="font-display font-700 text-gray-900 text-lg mb-2">Trust & Transparency</h3>
+          <p class="text-gray-500 text-sm">We show real reviews, honest pricing, and clear policies. No hidden fees, no surprises.</p>
+        </div>
+        <div class="card-hover bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
+          <div class="w-12 h-12 bg-purple-100 rounded-2xl flex items-center justify-center mb-4 text-2xl">🎯</div>
+          <h3 class="font-display font-700 text-gray-900 text-lg mb-2">Customer First</h3>
+          <p class="text-gray-500 text-sm">Every decision we make starts with asking: how does this make our customer's day better?</p>
+        </div>
+        <div class="card-hover bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
+          <div class="w-12 h-12 bg-pink-100 rounded-2xl flex items-center justify-center mb-4 text-2xl">🌿</div>
+          <h3 class="font-display font-700 text-gray-900 text-lg mb-2">Sustainability</h3>
+          <p class="text-gray-500 text-sm">We prioritise eco-friendly packaging and partner with brands that share our green values.</p>
+        </div>
+        <div class="card-hover bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
+          <div class="w-12 h-12 bg-emerald-100 rounded-2xl flex items-center justify-center mb-4 text-2xl">⚡</div>
+          <h3 class="font-display font-700 text-gray-900 text-lg mb-2">Speed & Reliability</h3>
+          <p class="text-gray-500 text-sm">Same-day dispatch on most orders and real-time tracking so you're never left guessing.</p>
+        </div>
+        <div class="card-hover bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
+          <div class="w-12 h-12 bg-yellow-100 rounded-2xl flex items-center justify-center mb-4 text-2xl">💎</div>
+          <h3 class="font-display font-700 text-gray-900 text-lg mb-2">Quality Assurance</h3>
+          <p class="text-gray-500 text-sm">Every product on ShopWave is verified for authenticity before it reaches your doorstep.</p>
+        </div>
+        <div class="card-hover bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
+          <div class="w-12 h-12 bg-rose-100 rounded-2xl flex items-center justify-center mb-4 text-2xl">❤️</div>
+          <h3 class="font-display font-700 text-gray-900 text-lg mb-2">Community</h3>
+          <p class="text-gray-500 text-sm">We give back — from local seller partnerships to charity drives with every 100th order.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+    <div class="text-center mb-12">
+      <span class="text-indigo-600 font-semibold text-sm uppercase tracking-widest">The People</span>
+      <h2 class="font-display text-4xl font-700 text-gray-900 mt-2">Meet the Team</h2>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="text-center">
+        <div class="w-20 h-20 hero-gradient rounded-full mx-auto flex items-center justify-center text-3xl mb-3">👩‍💼</div>
+        <h3 class="font-display font-700 text-gray-900">Kavya Rajan</h3>
+        <p class="text-indigo-600 text-sm">CEO & Co-Founder</p>
+      </div>
+      <div class="text-center">
+        <div class="w-20 h-20 bg-gradient-to-br from-emerald-400 to-teal-600 rounded-full mx-auto flex items-center justify-center text-3xl mb-3">👨‍💻</div>
+        <h3 class="font-display font-700 text-gray-900">Arjun Mehta</h3>
+        <p class="text-indigo-600 text-sm">CTO & Co-Founder</p>
+      </div>
+      <div class="text-center">
+        <div class="w-20 h-20 bg-gradient-to-br from-pink-400 to-rose-600 rounded-full mx-auto flex items-center justify-center text-3xl mb-3">👩‍🎨</div>
+        <h3 class="font-display font-700 text-gray-900">Sneha Pillai</h3>
+        <p class="text-indigo-600 text-sm">Head of Design</p>
+      </div>
+      <div class="text-center">
+        <div class="w-20 h-20 bg-gradient-to-br from-amber-400 to-orange-600 rounded-full mx-auto flex items-center justify-center text-3xl mb-3">👨‍📦</div>
+        <h3 class="font-display font-700 text-gray-900">Dev Kumar</h3>
+        <p class="text-indigo-600 text-sm">Head of Logistics</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-gray-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <div class="flex flex-col sm:flex-row justify-between items-center gap-4 text-sm">
+        <a href="../index.html" class="flex items-center gap-2">
+          <span class="text-white font-display font-700 text-lg">Shop<span class="text-indigo-400">Wave</span></span>
+        </a>
+        <div class="flex gap-6">
+          <a href="../index.html" class="hover:text-indigo-400 transition-colors">Home</a>
+          <a href="about.html" class="hover:text-indigo-400 transition-colors">About</a>
+          <a href="services.html" class="hover:text-indigo-400 transition-colors">Services</a>
+          <a href="contact.html" class="hover:text-indigo-400 transition-colors">Contact</a>
+        </div>
+        <p class="text-gray-500">© 2025 ShopWave</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" class="hidden fixed bottom-6 right-6 btn-primary text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center hover:scale-110 transition-all z-50">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+  </button>
+  <script src="../js/main.js"></script>
+</body>
+</html>
